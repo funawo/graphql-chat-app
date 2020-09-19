@@ -1,0 +1,7 @@
+.header {
+  background-color: aquamarine;
+  line-height: 3rem;
+  padding-left: 50px;
+  z-index: 100;
+  width: 100%;
+}

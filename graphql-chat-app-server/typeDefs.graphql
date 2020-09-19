@@ -1,0 +1,17 @@
+type Query {
+  allMessages: [Message]!
+}
+
+type Message {
+  user: String!
+  body: String!
+  postedAt: String
+}
+
+type Mutation {
+  post(user: String!, body: String!): Message!
+}
+
+type Subscription {
+  newMessage: Message
+}

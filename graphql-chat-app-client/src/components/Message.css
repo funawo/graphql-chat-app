@@ -1,0 +1,14 @@
+.message {
+  border: solid 1px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.meta {
+  border-bottom: dotted 1px;
+}
+
+.message div {
+  padding: 8px 8px;
+  word-break: break-all;
+}

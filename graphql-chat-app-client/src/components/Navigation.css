@@ -1,0 +1,7 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: calc(100vh);
+  padding-top: 3rem;
+}

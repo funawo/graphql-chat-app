@@ -1,0 +1,25 @@
+.main {
+  padding-top: 3rem;
+}
+
+.messages {
+  height: calc(100vh - 6rem - 2rem);
+  overflow-y: scroll;
+  padding: 0 15px;
+}
+
+.textarea {
+  width: calc(100% - 5rem - 8px);
+  height: 2rem;
+}
+
+.submit-button {
+  width: 5rem;
+  height: 2rem;
+  margin-left: 8px;
+  vertical-align: top;
+}
+
+.form {
+  padding: 0 15px;
+}
