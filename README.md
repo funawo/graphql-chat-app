@@ -1,4 +1,16 @@
+### 事前準備
+* リポジトリクローン
+```
+$ git clone https://github.com/funawo/graphql-chat-app.git
+```
+* ディレクトリ移動
+```
+$ cd graphql-chat-app
+```
+* シェル変数設定
+```
 WORK_DIR=$(pwd)
+```
 ### mongoの起動
 * ディレクトリ移動
 ```
