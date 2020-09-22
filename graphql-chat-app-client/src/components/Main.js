@@ -60,7 +60,6 @@ const Main = () => {
     subscribeToMore({
       document: query,
       updateQuery: (prev, { subscriptionData }) => {
-        console.log(prev)
         if (!subscriptionData) {
           return prev
         }
