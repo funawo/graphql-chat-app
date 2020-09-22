@@ -56,7 +56,7 @@ $ npm install
 ```
 $ touch .env
 $ echo "REACT_APP_GRAPHQL_HTTP_URL=http://<GraphQLサーバのIP>:4000/graphql" >> .env
-$ echo "REACT_APP_GRAPHQL_WS_URL=ws://<GraphQLサーバのIP>:4000/graphq" >> .env
+$ echo "REACT_APP_GRAPHQL_WS_URL=ws://<GraphQLサーバのIP>:4000/graphql" >> .env
 ```
 * 起動
 ```
