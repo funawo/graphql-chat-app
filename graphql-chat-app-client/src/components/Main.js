@@ -80,9 +80,6 @@ const Main = () => {
 
   }, [ subscribeToMore ])
 
-  useEffect(() => {
-  }, [ messages ])
-
   const mounted = useRef(false)
   const initialScroll = useRef(null)
   const [ isScrolled, setScrolled ] = useState(false)
@@ -104,7 +101,7 @@ const Main = () => {
 
   return (
     <main className="main">
-      <div className="messages p-15" id="messageScroll" ref={initialScroll}>
+      <div className="messages" id="messageScroll" ref={initialScroll}>
         {
           messages.map((row, index) => <Message row={row} key={index} />)
         }
@@ -112,9 +109,9 @@ const Main = () => {
       <div className="form">
         <textarea className="textarea" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
         <input
-          className="submit-button"
-          type="submit"
-          value="送信"
+          className="send-button"
+          type="button"
+          value="send"
           onClick={() => {
             sendMessage(message)
             setMessage('')

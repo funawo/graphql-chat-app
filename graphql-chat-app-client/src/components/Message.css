@@ -6,6 +6,15 @@
 
 .meta {
   border-bottom: dotted 1px;
+  display: flex;
+}
+
+.meta div {
+  width: 50%;
+}
+
+.meta div:nth-child(2) {
+  text-align: right;
 }
 
 .message div {
