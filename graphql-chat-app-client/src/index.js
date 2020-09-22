@@ -7,12 +7,15 @@ import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 import { WebSocketLink } from '@apollo/client/link/ws'
 import { SubscriptionClient } from 'subscriptions-transport-ws';
 
-const subscriptionClient = new SubscriptionClient('ws://localhost:4000/graphql', {
+const GRAPHQL_HTTP_URL = process.env.REACT_APP_GRAPHQL_HTTP_URL
+const GRAPHQL_WS_URL = process.env.REACT_APP_GRAPHQL_WS_URL
+
+const subscriptionClient = new SubscriptionClient(GRAPHQL_WS_URL, {
   reconnect: true
 })
 const link = new WebSocketLink(subscriptionClient)
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql',
+  uri: GRAPHQL_HTTP_URL,
   cache: new InMemoryCache(),
   link
 })

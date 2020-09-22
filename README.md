@@ -35,6 +35,7 @@ $ npm install
 ```
 * 環境設定ファイルの編集
 ```
+$ touch .env
 $ # DB_HOST=mongodb://ユーザ:パスワード@localhost:27017/DB名
 $ echo "DB_HOST=mongodb://graphql_user:graphql_user@localhost:27017/chat_app" > .env
 ```
@@ -50,6 +51,12 @@ $ cd $WORK_DIR/graphql-chat-app-client
 * パッケージインストール
 ```
 $ npm install
+```
+* 環境設定ファイルの編集
+```
+$ touch .env
+$ echo "REACT_APP_GRAPHQL_HTTP_URL=http://<GraphQLサーバのIP>:4000/graphql" >> .env
+$ echo "REACT_APP_GRAPHQL_WS_URL=ws://<GraphQLサーバのIP>:4000/graphq" >> .env
 ```
 * 起動
 ```

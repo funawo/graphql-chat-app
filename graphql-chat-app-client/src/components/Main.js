@@ -5,7 +5,8 @@ import { useQuery } from '@apollo/client'
 import { gql } from '@apollo/client/core'
 import { animateScroll as scroll } from 'react-scroll';
 import './Main.css';
-const GRAPHQL_ENDPOINT = 'http://localhost:4000/graphql';
+
+const GRAPHQL_HTTP_URL = process.env.REACT_APP_GRAPHQL_HTTP_URL
 
 async function sendMessage(message) {
   const query = `
@@ -22,7 +23,7 @@ async function sendMessage(message) {
     body: message
   }
 
-  const { newMessage } = await request(GRAPHQL_ENDPOINT, query, variables)
+  const { newMessage } = await request(GRAPHQL_HTTP_URL, query, variables)
   return newMessage
 }
 
